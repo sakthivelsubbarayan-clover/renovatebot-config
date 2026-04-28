@@ -3,7 +3,7 @@
   "extends": [
     "config:base"
   ],
-  "automerge": true,
+  "automerge": false,
   "automergeType": "branch",
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Dependency Dashboard",
@@ -17,8 +17,8 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
+      "automerge": false
     }
   ],
   "autodiscover": true
-}
+  }
