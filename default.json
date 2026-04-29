@@ -9,16 +9,15 @@
   "dependencyDashboardTitle": "Dependency Dashboard",
   "platform": "github",
   "prConcurrentLimit": 10,
-  "rebaseWhen": "behind-base-branch",
+  "rebaseWhen": "auto",
   "prHeader": "Dependencies",
   "vulnerabilityAlerts": {
     "enabled": true
   },
-  "packageRules": [
+    "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch"],
-      "automerge": false
+      "updateTypes": ["minor", "patch"],
+      "groupName": "all minor and patch dependencies"
     }
-  ],
-  "autodiscover": true
+  ]
   }
